@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tarefas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="toggle-theme">🌙</button>
+    </div>
+
+    <div class="container_principal">
+        <h1>LISTA DE TAREFAS</h1>
+
+        <nav>
+            <label><input type="checkbox" value="Casa" class="filtro-categoria" checked> CASA</label>
+            <label><input type="checkbox" value="Estudos" class="filtro-categoria" checked> ESTUDOS</label>
+            <label><input type="checkbox" value="Trabalho" class="filtro-categoria" checked> TRABALHO</label>
+        </nav>
+
+        <div class="adicionar_tarefa">
+            <input type="text" id="inputTarefa" placeholder="Adicione sua tarefa aqui">
+            <select id="meuSelect">
+                <option value="Casa">Casa</option>
+                <option value="Estudos">Estudos</option>
+                <option value="Trabalho">Trabalho</option>
+            </select>
+            <select id="diaSemana">
+                <option value="segunda">Segunda</option>
+                <option value="terca">Terça</option>
+                <option value="quarta">Quarta</option>
+                <option value="quinta">Quinta</option>
+                <option value="sexta">Sexta</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+            </select>
+            <button id="botao-principal">Salvar</button>
+        </div>
+
+        <div class="dias-semana">
+            <div class="dia" id="segunda"><h3>Segunda</h3><ul class="lista-tarefas"></ul><div class="progress-container"><div class="progress-bar"></div></div></div>
+            <div class="dia" id="terca"><h3>Terça</h3><ul class="lista-tarefas"></ul><div class="progress-container"><div class="progress-bar"></div></div></div>
+            <div class="dia" id="quarta"><h3>Quarta</h3><ul class="lista-tarefas"></ul><div class="progress-container"><div class="progress-bar"></div></div></div>
+            <div class="dia" id="quinta"><h3>Quinta</h3><ul class="lista-tarefas"></ul><div class="progress-container"><div class="progress-bar"></div></div></div>
+            <div class="dia" id="sexta"><h3>Sexta</h3><ul class="lista-tarefas"></ul><div class="progress-container"><div class="progress-bar"></div></div></div>
+            <div class="dia" id="sabado"><h3>Sábado</h3><ul class="lista-tarefas"></ul><div class="progress-container"><div class="progress-bar"></div></div></div>
+            <div class="dia" id="domingo"><h3>Domingo</h3><ul class="lista-tarefas"></ul><div class="progress-container"><div class="progress-bar"></div></div></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
