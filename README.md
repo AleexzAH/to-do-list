@@ -1,5 +1,5 @@
 # 📝 Lista de tarefas – Portfólio Web #
-Esse é um projeto de desenvolvimento de um site com adição de lista de tarefas separa por dias
+Esse é um projeto de desenvolvimento de um site com adição de lista de tarefas separada por dias
 
 ## Acesse aqui ##
 Link: https://to-do-list-beta-gold.vercel.app/
